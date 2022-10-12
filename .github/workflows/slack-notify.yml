@@ -16,5 +16,4 @@ jobs:
           SLACK_TITLE: The Skillz team published a new release 🚀
           SLACK_FOOTER: Skillz team
           SLACK_COLOR: ${{ job.status }}
-          SLACK_MESSAGE: ${{ steps.deploy-message.outputs.commit_msg }}
           SLACK_ICON_EMOJI: :bell:
