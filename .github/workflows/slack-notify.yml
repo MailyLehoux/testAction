@@ -1,5 +1,5 @@
 on: release
-name: Slack Notification Demo
+name: New release on github \:z:\
 jobs:
   slackNotification:
     name: Slack Notification
@@ -11,3 +11,7 @@ jobs:
 
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_USERNAME: Skillz
+          SLACK_ICON: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.zenika.com%2F&psig=AOvVaw3v8klpcc81F-hx_3D4oqhJ&ust=1665647850169000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMi80PWb2voCFQAAAAAdAAAAABAD
+          SLACK_TITLE: The Skillz team published a new release 🚀
+          SLACK_FOOTER: Skillz team
