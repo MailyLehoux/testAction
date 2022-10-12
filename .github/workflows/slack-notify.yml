@@ -1,5 +1,5 @@
 on: release
-name: New release of Skillz on github :z:
+name: New release of Skillz on github
 jobs:
   slackNotification:
     name: Slack Notification
@@ -8,7 +8,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Slack Notify
         uses: rtCamp/action-slack-notify@v2.2.0
-
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_USERNAME: Skillz
@@ -16,4 +15,4 @@ jobs:
           SLACK_TITLE: The Skillz team published a new release 🚀
           SLACK_FOOTER: Skillz team
           SLACK_COLOR: ${{ job.status }}
-          SLACK_ICON_EMOJI: :bell:
+          SLACK_ICON_EMOJI: \:/bell\:/
